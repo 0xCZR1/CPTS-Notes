@@ -1,0 +1,3 @@
+Insecure Direct Object Reference refers to a technique that abuses the lack of access control on the back-end side. Reaching a solid access control on the back-end is an ideology due to the fact it would disrupt the availability of the web app too much, so the web app relies on front-end maneuvers to sanitize the direct object reference field.
+It could be encoded and than hashed, but it also matters when, if it does this prior to reaching an API endpoint or any sub-level we can try and detect it via the source code. If it does this right we can try and compare the DOR value and maybe predict it.
+
